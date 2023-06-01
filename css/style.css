@@ -5085,6 +5085,7 @@ a.close.disabled {
   color: #212529; }
 
 .carousel {
+  
   position: relative; }
 
 .carousel.pointer-event {
@@ -5148,7 +5149,7 @@ a.close.disabled {
 .carousel-fade .carousel-item.active,
 .carousel-fade .carousel-item-next.carousel-item-left,
 .carousel-fade .carousel-item-prev.carousel-item-right {
-  z-index: 1;
+  
   opacity: 1; }
 
 .carousel-fade .active.carousel-item-left,
@@ -5247,7 +5248,7 @@ a.close.disabled {
     margin-right: 3px;
     margin-left: 3px;
     text-indent: -999px;
-    cursor: pointer;
+    
     background-color: #fff;
     background-clip: padding-box;
     border-top: 10px solid transparent;
@@ -9682,3 +9683,10 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+/* scroolling */
+
+.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item{
+  -ms-touch-action: auto;
+      touch-action: auto;
+}
